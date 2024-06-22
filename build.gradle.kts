@@ -5,5 +5,5 @@ plugins {
     id("com.android.library") version "7.4.2" apply false
     id("androidx.navigation.safeargs") version "2.7.7" apply false
     id("com.google.gms.google-services") version "4.4.2" apply false
-    id("com.google.dagger.hilt.android") version "2.44" apply false
+    id("com.google.dagger.hilt.android") version "2.51.1" apply false
 }

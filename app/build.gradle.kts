@@ -14,7 +14,7 @@ android {
 
     defaultConfig {
         applicationId = "com.rpm.ecommerceapp"
-        minSdk = 21
+        minSdk = 23
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -43,6 +43,9 @@ android {
             enable = true
         }
     }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.13"
+    }
 }
 
 dependencies {
@@ -60,9 +63,8 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx)
 
     //Dagger - Hilt
-    implementation(libs.hilt.android)
-    kapt("com.google.dagger:hilt-android-compiler:2.44")
-    implementation(libs.androidx.hilt.lifecycle.viewmodel)
+    implementation("com.google.dagger:hilt-android:2.51.1")
+    kapt("com.google.dagger:hilt-compiler:2.51.1")
     kapt(libs.androidx.hilt.compiler)
     implementation(libs.androidx.hilt.navigation.compose)
 
